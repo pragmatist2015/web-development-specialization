@@ -1,0 +1,26 @@
+
+h1 {
+	color: red;
+}
+
+p {
+	color: purple;
+	line-height: 100px;
+}
+
+.Paragraphs {
+	line-height: 50%;
+	color: orange;
+	font-family: Helvetica, Arial, sans-serif;
+	
+}
+
+body {
+	border-style: ridge;
+	border-color: blue;
+}
+
+img {
+	width: 100%;
+	
+}

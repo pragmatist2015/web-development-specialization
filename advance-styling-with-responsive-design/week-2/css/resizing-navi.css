@@ -1,0 +1,58 @@
+body{
+  font-size: .8em;
+	background-color: #F2F2F2;
+	margin: 1%;
+	padding:1%;
+}
+
+p {
+  vertical-align: bottom;
+}
+
+nav{
+  border: 1px solid #06425C;
+  color:#06425C;
+  background-color:#FFFFFF;
+  overflow: auto;
+  padding-left:8%;
+
+}
+
+nav a {
+  background-color: green;
+  color: #ffffff;
+  border-radius: 25px;
+  text-decoration: none;
+  padding: 1% 2%;
+  margin: 1% 2% 1% 8%;
+  line-height: 45px;
+}
+
+section {
+  border: ;
+}
+
+
+
+@media all and (min-width: 560px) {
+  nav{
+  display: inline-block;
+  width: 10%;
+  height: 100vh;
+	border: 1px solid #06425C;
+	color:#06425C;
+	background-color: green;
+	overflow: auto;
+	padding-left:8%;
+  line-height: 45px;
+  
+}
+
+section {
+  display: inline-block;
+  vertical-align: top;
+  width: 80%;
+  border: 1px solid;
+}
+
+}

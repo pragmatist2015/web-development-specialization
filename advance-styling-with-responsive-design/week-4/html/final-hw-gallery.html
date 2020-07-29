@@ -1,0 +1,139 @@
+<!Doctype html>
+<html lang = "en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device=width , initial-scale=1">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="../css/final-hw-gallery-style.css">
+		
+		<title>Photo Gallery</title>
+	</head>
+	
+	<body>
+		<header>
+			<nav class= "navbar navbar-expand-md navbar-dark" style="background-color:rgba(121,55,107,1.0)">
+				<a class="navbar-brand" href="#" style="border-right:0.5px solid #ffffff;padding-right:10px">Website</a>
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target= "#collapsedNavContent" aria-controls="collapsedNavContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="collapsedNavContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link act" href="#">Home<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Place Holder 1</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Place Holder 2</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Place Holder 3</a>
+						</li>
+						<li class="nav-item dropdown" >
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Place Holder 1</a>
+								<a class="dropdown-item" href="#">Place Holder 2</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Place Holder 3</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class="container">
+			<main>
+				<section> 
+				
+					<div class="row mt-3">
+						<div class="m-auto shadow-sm d-flex align-items-center" id="imageFrame"><!--enlarged image frame-->
+							<figure class=" mx-auto d-block ">
+								<a tabindex="0" class="" role="button" data-toggle="popover" data-trigger="hover" title="Title" data-container="#imageFrame" data-placement="left" data-content="Here is some descriptive text about the image">
+									<img class="mx-auto d-block" style="height:auto" id="enlargedImage" src=""  >
+								</a>
+								<figcaption></figcaption>
+							</figure>
+						</div>
+						
+					</div>
+					
+					<div id="divider" class=" m-auto pt-4" style="border-bottom: 1px solid rgba(221,202,17,1.0)"></div>
+					
+					<div class="row">
+						<!--thumbnail container-->
+						<div id="thumbnailContainer" class="container pt-3 mt-2 shadow-sm overflow-auto" style="width: 50%; max-height:150px;border: 1px solid rgba(191,191,191,1.0)">
+							<div class="row pb-3"> 
+								<img class="col-md-3 shadow-sm m-auto pb-3 "  src="https://s3.us-west-2.amazonaws.com/photos.puppyspot.com/breeds/209/card/500000185_medium.jpg" alt="akita" onclick="setImage(this)">
+								<img class="col-md-3 shadow-sm m-auto pb-3 " src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hs-2009-25-e-full.jpg/277px-Hs-2009-25-e-full.jpg" alt="nebula" onclick="setImage(this)">
+								<img class="col-md-3 shadow-sm m-auto pb-3 "   src="https://i.ytimg.com/vi/0JBaMSBrTP0/maxresdefault.jpg" alt="lilium jet" onclick="setImage(this)">
+							
+							</div>
+							
+							<div class="row pb-3">
+								<img class="col-md-3 shadow-sm m-auto pb-3 pt-3"  src="https://s3.us-west-2.amazonaws.com/photos.puppyspot.com/breeds/209/card/500000185_medium.jpg" alt="akita" onclick="setImage(this)">
+								<img class="col-md-3 shadow-sm m-auto pb-3 pt-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hs-2009-25-e-full.jpg/277px-Hs-2009-25-e-full.jpg" alt="nebula" onclick="setImage(this)">
+								<img class="col-md-3 shadow-sm m-auto pb-3 pt-3"   src="https://i.ytimg.com/vi/0JBaMSBrTP0/maxresdefault.jpg" alt="lilium jet" onclick="setImage(this)">
+							
+							</div>
+							
+							<div class="row pb-3">
+								<img class="col-md-3 shadow-sm m-auto pb-3 pt-3"  src="https://s3.us-west-2.amazonaws.com/photos.puppyspot.com/breeds/209/card/500000185_medium.jpg" alt="akita" onclick="setImage(this)">
+								<img class="col-md-3 shadow-sm m-auto pb-3 pt-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hs-2009-25-e-full.jpg/277px-Hs-2009-25-e-full.jpg" alt="nebula" onclick="setImage(this)">
+								<img class="col-md-3 shadow-sm m-auto pb-3 pt-3"   src="https://i.ytimg.com/vi/0JBaMSBrTP0/maxresdefault.jpg" alt="lilium jet" onclick="setImage(this)">
+							
+							</div>
+						</div>
+					</div>
+				
+				</section>
+			</main>
+			
+		</div>
+		<footer class="footer mt-1" style="background-color: #C40233; height: 20vh" >
+		
+				<ul class=" nav justify-content-center pt-2">
+					<li class="icon nav-item">
+						<a class="nav-link" href="#"><img class=""  src="../media/google-shadow-icon.png" style="width: 50px;"></a>
+					</li>
+					<li class="icon nav-item">
+						<a class="nav-link" href="#"><img class=""  src="../media/facebook-shadow-icon.png" style="width: 50px;"></a>
+					</li>
+					<li class="icon nav-item">
+						<a class="nav-link" href="#"><img class=""  src="../media/instagram-shadow-icon.png" style="width: 50px;"></a>
+					</li>
+					<li class="icon nav-item">
+						<a class="nav-link" href="#"><img class=""  src="../media/linkedin-shadow-icon.png" style="width: 50px; height:50px;"></a>
+					</li>
+					
+					
+				</ul>
+				<ul class="nav justify-content-center ">
+					<li class="nav-item">
+						<a class="nav-link text-white" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-white" href="#">Place Holder 1</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-white" href="#">Place Holder 2</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-white" href="#">Place Holder 3</a>
+					</li>
+				</ul>
+			
+			
+		</footer>
+		<div class="   py-3 "  style="background-color: #000000">
+			</div>
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="../js/final-hw-script.js"></script>
+	</body>
+</html>

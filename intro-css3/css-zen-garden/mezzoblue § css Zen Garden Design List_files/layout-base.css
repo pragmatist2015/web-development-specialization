@@ -1,0 +1,1233 @@
+/*
+
+	-- -- -- -- -- -- --
+	mezzoblue v6 base layout CSS file
+	'Fountain' style
+	last edit: 14 jan 10
+	-- -- -- -- -- -- --
+
+	File Contents:
+	Base layout style for site, independent of colour information.
+	
+*/
+
+
+																				/* --------------------------------------------------------------- */
+																				/* -- Re-usables -- */
+
+																				/* -- HTML Elements -- */
+acronym, abbr {
+	cursor: help;
+}
+a:link, a:visited {
+	text-decoration: underline;
+}
+blockquote {
+	margin: 12px 25px;
+	padding: 6px 12px 6px 38px;
+	background: url(../../i/fountain/blockquote.png) no-repeat 10px 10px;
+}
+body {
+	font: 12px "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	padding: 10px 20px
+}
+code, kbd, var {
+	font: 12px Monaco, monospace;
+}
+dl {
+	margin: 0.5em 0 1.5em 0;
+}
+dt {
+	font-weight: bold;
+	line-height: 1.5;
+	margin-top: 1em;
+	padding: 0 25px;
+	background: url(../../i/fountain/dt.png) no-repeat 6px 0.2em;
+}
+dd {
+	line-height: 1.5;
+	padding: 0 25px;
+}
+h2 {
+	font-weight: normal;
+	font-family: palatino, georgia, serif;
+}
+h3 {
+	font-weight: normal;
+	font-family: palatino, georgia, serif;
+	margin: 1.5em 0 1em 0;
+}
+h4 {
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: 1.5em 0 1em 0;
+}
+h5 {
+	font-weight: normal;
+	margin: 1.5em 0 1em 0;
+}
+h6 {
+	font-size: 11px;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: 18px 0 12px 0;
+}
+iframe {
+	border: none;
+}
+li {
+	line-height: 1.5;
+}
+p {
+	line-height: 1.65;
+	margin: 0.8em 0;
+}
+pre code {
+	display: block;
+	line-height: 1.6;
+	margin: 12px 0;
+	padding: 6px 38px 6px 12px;
+	overflow: auto;
+}
+
+																				/* -- Classes -- */
+.flLeft {
+	float: left;
+	margin: 0 12px 12px 0;
+}
+.flRight {
+	float: right;
+	margin: 0 0 12px 12px;
+}
+.block {
+	clear: both;
+	padding-bottom: 12px;
+}
+.block-img {
+	clear: both;
+	padding: 15px 0;
+	text-align: center;
+}
+.block-img img {
+	margin: 10px 0;
+}
+.block-img .caption {
+	text-align: left;
+	width: 400px;
+	margin: 0 auto;
+}
+.sep {
+	padding: 0 0.25em;
+}
+.small-outline {
+	display: block;
+	padding: 5px;
+	border: solid 1px #000;
+}
+.large-outline {
+	display: block;
+	padding: 8px;
+	border: solid 1px #000;
+}
+.highlighted {
+	background: url(../../i/fountain/dotted-black-h.png) repeat-x left bottom;
+}
+.highlighted h3 {
+	margin-top: 0;
+}
+.highlighted p {
+	margin-bottom: 0;
+}
+#main-content .highlighted .wrapper {
+	background: url(../../i/fountain/dotted-black-h.png) repeat-x 0 0;
+	padding: 15px;
+	margin: 0;
+}
+.notice {
+	margin: 24px 0;
+	padding-left: 44px;
+	background: url(/i/fountain/ico-notice.gif) no-repeat 2px 2px;
+}
+#main-content .notice h2 {
+	font: bold 1em "Lucida Grande", "Lucida Sans Unicode", arial, sans-serif;
+	margin: 0;
+	line-height: 1.65;
+}
+.notice p {
+	margin: 0 0 0.8em 0;
+}
+.flvPlayer {
+	margin: 20px 0;
+}
+
+																				/* --------------------------------------------------------------- */
+																				/* -- Layout Setup -- */
+#container .wrap1 {
+	background: url(../../i/fountain/dotted-black-v.png) repeat-y 4px 0;
+}
+#container .wrap2 {
+	background: url(../../i/fountain/dotted-black-vr.png) repeat-y right top;
+}
+
+																				/* -- Header -- */
+#header {
+	background: #aaa url(../../i/fountain/white-noise.png) repeat 0 0;
+}
+#header .wrapper-main {
+	background: url(../../i/fountain/dotted-white-v.png) repeat-y 4px 0;
+}
+#header .wrapper-deco {
+	position: relative;
+	background: url(../../i/fountain/photo-bg.gif) repeat-y right top;
+}
+#header-meta {
+	height: 90px;
+	background: url(../../i/fountain/dotted-white-v.png) repeat-y 0 0;
+	border-left: solid 4px #ccc;
+}
+#header-meta .wrapper1 {
+	height: 90px;
+	background: url(../../i/fountain/dotted-white-v.png) repeat-y right top;
+	border-right: solid 4px #ccc;
+}
+#header-meta .wrapper2 {
+	height: 86px;
+	background: url(../../i/fountain/dotted-white-h.png) repeat-x 0 0;
+	border-top: solid 4px #ccc;
+}
+#header-meta .wrapper-shadow {
+	height: 86px;
+	overflow: hidden;
+	background: url(../../i/fountain/shadow-top.png) repeat-x left bottom;
+}
+
+h1 {
+	position: absolute;
+	border-left: solid 20px #ccc;
+	width: 214px;
+	height: 63px;
+	background: url(../../i/fountain/dotted-white-v.png) repeat-y 4px 0;
+}
+h1 a:link, h1 a:visited {
+	display: block;
+	width: 214px;
+	height: 63px;
+	text-indent: -9000px;
+	background: url(../../i/fountain/logo.png) no-repeat 25px 21px;
+	text-decoration: none;
+	overflow: hidden;
+}
+h1.icons a:link, h1.icons a:visited {
+	background: url(../../i/fountain/logo-icons.png) no-repeat 25px 21px;
+}
+
+
+#header-meta p {
+	display: none;
+}
+																				/* -- Primary Nav -- */
+#primary-nav {
+	position: absolute;
+	top: 9px;
+	right: 0;
+	height: 90px;
+}
+#primary-nav ul {
+	position: absolute;
+	width: 322px;
+	height: 36px;
+}
+#primary-nav li {
+	display: block;
+	height: 36px;
+	position: absolute;
+	top: 0;
+}
+#primary-nav li {
+	overflow: hidden;
+	text-indent: -9000px;
+}
+li.home {
+	width: 49px;	
+}
+	li.home a:link, li.home a:visited {
+		display: block;
+		height: 36px;
+		background: url(../../i/fountain/nav2.png) no-repeat 0 0;
+	}
+	li.home a:hover {
+		background-position: 0 -36px;
+		outline: none;
+	}
+	.homePage li.home a:link, .homePage li.home a:visited {
+		background-position: 0 -72px;
+	}
+li.archives {
+	left: 50px;
+	width: 80px;
+}
+	li.archives a:link, li.archives a:visited {
+		display: block;
+		height: 36px;
+		background: url(../../i/fountain/nav2.png) no-repeat -50px 0;
+	}
+	li.archives a:hover {
+		background-position: -50px -36px;
+		outline: none;
+	}
+	.archives li.archives a:link, .archives li.archives a:visited {
+		background-position: -50px -72px;
+	}
+li.icons {
+	left: 130px;
+	width: 59px;
+}
+	li.icons a:link, li.icons a:visited {
+		display: block;
+		height: 36px;
+		background: url(../../i/fountain/nav2.png) no-repeat -130px 0;
+	}
+	li.icons a:hover {
+		background-position: -130px -36px;
+		outline: none;
+	}
+	.icons li.icons a:link, .icons li.icons a:visited {
+		background-position: -130px -72px;
+	}
+
+li.about {
+	left: 189px;
+	width: 63px;
+}
+	li.about a:link, li.about a:visited {
+		display: block;
+		height: 36px;
+		background: url(../../i/fountain/nav2.png) no-repeat -189px 0;
+	}
+	li.about a:hover {
+		background-position: -189px -36px;
+		outline: none;
+	}
+	.about li.about a:link, .about li.about a:visited {
+		background-position: -189px -72px;
+	}
+li.contact {
+	left: 253px;
+	width: 69px;
+}
+	li.contact a:link, li.contact a:visited {
+		display: block;
+		height: 36px;
+		background: url(../../i/fountain/nav2.png) no-repeat -253px 0;
+	}
+	li.contact a:hover {
+		background-position: -253px -36px;
+		outline: none;
+	}
+	.contact li.contact a:link, .contact li.contact a:visited {
+		background-position: -253px -72px;
+	}
+
+																				/* -- Header Content Block -- */
+#header-content {
+	width: 380px;
+	float: left;
+	padding: 15px 25px 0 25px;
+	font-family: palatino, georgia, serif;
+}
+#header-content-title {
+	overflow: hidden;
+	background: url(../../i/fountain/dotted-white-h.png) repeat-x left bottom;
+}
+#header-content h2 {
+	float: left;
+	font-weight: normal;
+	font-size: 14px;
+}
+.post-archives {
+	float: right;
+	font: 11px "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+.post-archives a {
+	outline: none;
+}
+.post-archives .rss {
+	padding-right: 10px;
+	background: url(../../i/fountain/ico-rss.png) no-repeat 100% 3px;
+}
+#header-content ul {
+	clear: both;
+	padding: 5px 0;
+}
+#header-content li {
+	line-height: 1.2;
+	padding: 8px 0 4px 0;
+	background: url(../../i/fountain/dotted-black-h2.png) repeat-x left bottom;
+	text-align: right;
+	clear: left;
+}
+#header-content a:link, #header-content a:visited {
+	text-decoration: none;
+}
+#header-content a:hover {
+	text-decoration: underline;
+}
+#header a.title:link, #header a.title:visited {
+	display: block;
+	float: left;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+#header .yearly li {
+	text-align: left;
+}
+#header .yearly a.title:link, #header .yearly a.title:visited {
+	display: inline;
+	float: none;
+}
+
+																				/* -- Header Photo -- */
+#header-photo a:link, #header-photo a:visited {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	outline: none;
+}
+#header-photo a span.deco {
+	position: absolute;
+	top: 0;
+	right: 4px;
+	display: block;
+	width: 1px;
+	height: 253px;
+	background: url(../../i/fountain/dotted-black-v.png) repeat-y 0 0;
+}
+#header-photo a:hover span.flickr {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	display: block;
+	width: 152px;
+	height: 21px;
+	background: url(../../i/fountain/link-flickr-hover.png) no-repeat 0 0;
+}
+#header-photo img {
+	border: solid 10px #ccc;
+	border-width: 10px 0 0 10px;
+	float: right;
+}
+
+
+																				/* --------------------------------------------------------------- */
+																				/* -- Content Area Base Layout -- */
+#page-body {
+	clear: both;
+}
+#main-content {
+	float: left;
+	position: relative;
+}
+#main-content .wrapper {
+	margin: 25px 25px;
+}
+#sidebar {
+	position: relative;
+	float: left;
+	border-top: solid 10px #ccc;
+	background: url(../../i/fountain/dotted-black-vr.png) repeat-y right top;
+}
+																				/* -- Img-based headers -- */
+.content-title {
+	display: block;
+	position: absolute;
+	top: -25px;
+	left: 15px;
+	width: 200px;
+	height: 25px;
+	text-indent: -9000px;
+	z-index: 10;
+}
+#h-about {
+	background-image: url(../../i/fountain/h-aboutmezzoblue.png);
+	background-repeat: repeat-y; background-position: 0 0;
+}
+#h-contact {
+	background-image: url(../../i/fountain/h-contact.png);
+	background-repeat: repeat-y; background-position: 0 0;
+}
+#h-css {
+	background-image: url(../../i/fountain/h-css.png);
+	background-repeat: repeat-y; background-position: 0 0;
+}
+#h-csszengarden {
+	background-image: url(../../i/fountain/h-csszengarden.png);
+	background-repeat: repeat-y; background-position: 0 0;
+}
+#h-downloads {
+	background-image: url(../../i/fountain/h-downloads.png);
+	background-repeat: repeat-y; background-position: 0 0;
+}
+#h-error {
+	background-image: url(../../i/fountain/h-error.png);
+	background-repeat: repeat-y; background-position: 0 0;
+}
+#h-fullarchives {
+	background-image: url(../../i/fountain/h-fullarchives.png);
+	background-repeat: repeat-y; background-position: 0 0;
+}
+#h-icons {
+	background-image: url(../../i/fountain/h-icons.png);
+	background-repeat: repeat-y; background-position: 0 0;
+}
+#h-latestentry {
+	background-image: url(../../i/fountain/h-latestentry.png);
+	background-repeat: repeat-y; background-position: 0 0;
+}
+#h-latestentries {
+	background-image: url(../../i/fountain/h-latestentries.png);
+	background-repeat: repeat-y; background-position: 0 0;
+}
+#h-projects {
+	background-image: url(../../i/fountain/h-projects.png);
+	background-repeat: repeat-y; background-position: 0 0;
+}
+#h-related {
+	background-image: url(../../i/fountain/h-related.png);
+	background-repeat: repeat-y; background-position: 0 0;
+}
+#h-subscribe {
+	background-image: url(../../i/fountain/h-subscribe.png);
+	background-repeat: repeat-y; background-position: 0 0;
+}
+#h-weblogentry {
+	background-image: url(../../i/fountain/h-weblogentry.png);
+	background-repeat: repeat-y; background-position: 0 0;
+}
+#h-2002archives {
+	background-image: url(../../i/fountain/h-2002archives.png);
+	background-repeat: repeat-y; background-position: 0 0;
+}
+#h-2003archives {
+	background-image: url(../../i/fountain/h-2003archives.png);
+	background-repeat: repeat-y; background-position: 0 0;
+}
+#h-2004archives {
+	background-image: url(../../i/fountain/h-2004archives.png);
+	background-repeat: repeat-y; background-position: 0 0;
+}
+#h-2005archives {
+	background-image: url(../../i/fountain/h-2005archives.png);
+	background-repeat: repeat-y; background-position: 0 0;
+}
+#h-2006archives {
+	background-image: url(../../i/fountain/h-2006archives.png);
+	background-repeat: repeat-y; background-position: 0 0;
+}
+#h-2007archives {
+	background-image: url(../../i/fountain/h-2007archives.png);
+	background-repeat: repeat-y; background-position: 0 0;
+}
+#h-2008archives {
+	background-image: url(../../i/fountain/h-2008archives.png);
+	background-repeat: repeat-y; background-position: 0 0;
+}
+#h-2009archives {
+	background-image: url(../../i/fountain/h-2009archives.png);
+	background-repeat: repeat-y; background-position: 0 0;
+}
+#h-2010archives {
+	background-image: url(../../i/fountain/h-2010archives.png);
+	background-repeat: repeat-y; background-position: 0 0;
+}
+
+																				/* --------------------------------------------------------------- */
+																				/* -- General Content Formatting -- */
+code.css {
+	background-image: url(../../i/fountain/code-css.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+code.html {
+	background-image: url(../../i/fountain/code-html.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+code.php {
+	background-image: url(../../i/fountain/code-php.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+#main-content h2 {
+	font-size: 24px;
+	line-height: 1;
+	margin: 25px 0 5px 0;
+}
+#main-content h2 a:link, #main-content h2 a:visited {
+	text-decoration: none;
+}
+#main-content h2 a:hover {
+	text-decoration: underline;
+}
+#main-content h3 {
+	font-size: 14px;
+	line-height: 1;
+}
+#main-content h4 {
+	line-height: 1;
+}
+#main-content h5 {
+	line-height: 1;
+}
+#main-content h6 {
+	line-height: 1;
+}
+#main-content em {
+	font-style: normal;
+	font-weight: bold;
+}
+#main-content em.i {
+	font-style: italic;
+	font-weight: normal;
+}
+#main-content li {
+	padding-left: 25px;
+	margin-bottom: 0.5em;
+}
+#main-content ul, #main-content ol {
+	margin: 1em 0;
+}
+#main-content ol li {
+	padding: 0;
+	margin-left: 25px;
+	list-style: lower-roman;
+	list-style-position: outside;
+}
+#main-content ul li {
+	background: url(../../i/fountain/li.png) no-repeat 12px 0.4em;
+}
+#main-content .date {
+	line-height: 1;
+	display: block;
+	font-size: 11px;
+	text-transform: uppercase;
+	padding: 0 0 12px 0;
+	margin: 0 0 8px 0;
+	background: url(../../i/fountain/dotted-black-h.png) repeat-x left bottom;
+}
+.lead, .quote-large {
+	font-size: 2em;
+	font-family: palatino, georgia, serif;
+	font-style: italic;
+	padding: 12px 0 6px 0;
+}
+
+																				/* -- Inline Images -- */
+.image-holder-left img, .image-holder-right img {
+	margin: 0;
+}
+.image-holder-left {
+	float: left;
+	margin: 5px 10px 10px 0;
+}
+.image-holder-center {
+	margin: 10px 0;
+	text-align: center;
+}
+.image-holder-right {
+	float: right;
+	margin: 5px 0 10px 10px;
+}
+.image-holder-small {
+	margin: 0 hidden;
+	width: 400px;
+}
+.image-holder-small img {
+	margin: 0 hidden;
+	display: block;
+}
+div.medium {
+	position: relative;
+	left: -45px;
+	margin-right: -30px;
+}
+div.medium img {
+	padding: 10px 10px 10px 0;
+	background: transparent url(../../i/fountain/dotted-black-outline.gif) no-repeat top right;
+}
+.caption {
+	margin: 12px 0 25px 0;
+	color: #777;
+	font-size: 11px;
+}
+.caption-title {
+	font-weight: bold;
+}
+
+.image-holder-grid {
+	width: 595px;
+	overflow: hidden;
+}
+.image-holder-grid a:link, .image-holder-grid a:visited {
+	text-decoration: none;
+	display: block;
+	float: left;
+	margin-bottom: 0.8em;
+	width: 198px;
+}
+.image-holder-grid a:link .caption, .image-holder-grid a:visited .caption {
+	color: #777;
+	font-size: 11px;
+	display: block;
+	width: 192px;
+	margin: 0;
+}
+.three-up, .four-up {
+	background: url(../../i/fountain/dotted-black-h.png) repeat-x left top;
+	margin: 1em 0;
+}
+#main-content .three-up .wrapper, #main-content .four-up .wrapper {
+	background: url(../../i/fountain/dotted-black-h.png) repeat-x left bottom;
+	padding: 1.5em 0 0 0;
+	margin: 0;
+	width: 595px;
+	overflow: hidden;
+}
+.three-up a:link, .three-up a:visited {
+	width: 198px;
+}
+.three-up a:link .caption, .three-up a:visited .caption,
+.four-up a:link .caption, .four-up a:visited .caption {
+	padding-top: 2px;
+	margin-bottom: 1em;
+}
+
+
+
+																				/* -- Comments Formatting -- */
+.individual-comment {
+	padding: 10px 10px 10px 52px;
+	position: relative;
+	overflow: hidden;
+}
+.comments .odd {
+	border: dotted 1px #ccc;
+}
+.comments .dave {
+	border: dotted 1px #ccc;
+	margin: 10px 0;
+}
+.comments .meta {
+	margin: 0;
+	text-align: left;
+	text-transform: none;
+	font-size: 12px;
+	overflow: hidden;
+	background: url(../../i/fountain/dotted-black-h.png) repeat-x left bottom;
+}
+.comments .avatar {
+	text-align: right;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.comments .avatar a.comment-count:link, .comments .avatar a.comment-count:visited {
+	display: block;
+	text-align: right;
+	font-size: 11px;
+	text-decoration: none;
+	padding-top: 7px;
+}
+.comments .avatar img {
+	display: block;
+	border: solid 1px #fff;
+	margin: -1px 0 0 -1px;
+}
+.comments .author {
+	float: left;
+	padding-top: 10px;
+}
+#main-content .comments .date {
+	font-size: 12px;
+	text-transform: none;
+	float: right;
+	background: none;
+	padding: 10px 0 2px 0;
+}
+
+																				/* -- Jeremy Keith Button (R) -- */
+#jk-button {
+	margin: 25px 0;
+}
+#jk-button .wrapper {
+	overflow: hidden;
+}
+#jk-button .button {
+	float: left;
+	margin: 0 12px 0 0;
+	opacity: 0.8;
+}
+#jk-button .button:hover {
+	opacity: 0.9999;
+}
+
+
+																				/* -- Archive Page Formatting -- */
+.archive-nav {
+	margin: 25px 0 25px 0;
+	font-size: 11px;
+	text-transform: uppercase;
+	background: url(../../i/fountain/dotted-black-h.png) repeat-x left bottom;
+}
+.archive-nav p {
+	padding: 12px;
+	background: url(../../i/fountain/dotted-black-h.png) repeat-x left top;
+	text-align: center;
+}
+.archive-nav .divider {
+	margin: 0 10px;
+}
+.archive-collection {
+	clear: left;
+	margin: 25px 0 37px 0;
+}
+.archive-collection h2 {
+	margin-top: 0;
+}
+.archive-collection img {
+	border: solid 1px #ccc;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.archive-collection .details {
+	margin-left: 226px;
+}
+#main-content .archive-collection ul {
+	padding: 0;
+	margin: 0;
+}
+#main-content .archive-collection li {
+	line-height: 1.2;
+	padding: 8px 0 4px 0;
+	background: url(../../i/fountain/dotted-black-h2.png) repeat-x left bottom;
+	text-align: right;
+}
+.archive-collection a:link, .archive-collection a:visited {
+	text-decoration: none;
+}
+.archive-collection a:hover {
+	text-decoration: underline;
+}
+.archive-collection .title {
+	display: block;
+	float: left;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+#main-content .archive-collection li .date {
+	font-family: palatino, serif;
+	font-size: 11px;
+	text-transform: none;
+	margin: 0;
+	padding: 0;
+	background: none;
+	display: inline;
+}
+
+
+																				/* -- Home Page Formatting -- */
+.older-posts {
+	background: transparent url(../../i/fountain/dotted-black-h.png) repeat-x left bottom;
+	padding-bottom: 12px;
+}
+#main-content .older-posts ul {
+	width: 100%;
+	margin: 0;
+	padding-top: 12px;
+	background: transparent url(../../i/fountain/dotted-black-h.png) repeat-x 0 0;
+	overflow: hidden;
+}
+#main-content .older-posts li {
+	background: none;
+	padding: 0;
+	width: 185px;
+	margin: 0 20px 0 0;
+	float: left;
+}
+#main-content .older-posts li.last {
+	margin-right: 0;
+}
+#main-content .older-posts h3 {
+	font: 12px "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	margin: 0 0 0.5em 0;
+}
+#main-content .older-posts p {
+	margin: 0;
+}
+#main-content .older-posts .date {
+	font-size: 10px;
+}
+																				/* -- Post Formatting -- */
+body.post .post-archived {
+	padding-bottom: 30px;
+	background: url(../../i/fountain/dotted-black-h.png) repeat-x left bottom;
+	margin-bottom: 40px;
+}
+.meta {
+	margin: 12px 0;
+	font-size: 11px;
+	text-transform: uppercase;
+	background: url(../../i/fountain/dotted-black-h.png) repeat-x left bottom;
+	text-align: center;
+}
+.meta p {
+	padding: 12px;
+	background: url(../../i/fountain/dotted-black-h.png) repeat-x left top;
+}
+.meta .divider {
+	margin: 0 10px;
+}
+#sidebar .tr-linkcount {
+	background: none !important;
+}
+
+
+																				/* -- Form Styling -- */
+.styled-form {
+	margin: 25px 0;
+	background: url(../../i/fountain/dotted-black-h.png) repeat-x 0 0;
+}
+.styled-form label {
+	float: left;
+	clear: left;
+}
+.styled-form input {
+	padding: 1px;
+}
+	.styled-form label #comment-bake-cookie {
+		width: auto;
+	}
+.styled-form textarea {
+	padding: 5px;
+}
+.styled-form p {
+	width: 100%;
+	overflow: hidden;
+	margin: 12px 0;
+	padding: 1px 0;
+}
+.styled-form .send-button, .styled-form .preview-button {
+	width: 125px;
+	padding: 3px 0;
+	float: right;
+	display: block;
+}
+.styled-form p input {
+	width: hidden;
+}
+.styled-form p label {
+	float: left;
+	display: block;
+	width: hidden;
+	line-height: 26px;
+}
+.form-row {
+	padding: 12px 0;
+	background: url(../../i/fountain/dotted-black-h.png) repeat-x left bottom;
+}
+
+
+
+.styled-form input.error {
+	padding: 2px;
+}
+.styled-form input.error, .styled-form textarea.error {
+	border: solid 1px #900;
+	background-color: #fcc;
+}
+#error-message {
+	display: block;
+	clear: both;
+	text-align: left;
+	margin-top: 4em;
+	padding: 12px 12px 12px 30px;
+	border: solid 1px #900;
+	background: #fcc url(../../i/fountain/ico-error.gif) no-repeat 8px 16px;
+}
+
+
+
+																				/* --------------------------------------------------------------- */
+																				/* -- Sidebar -- */
+#sidebar h2 {
+	font-size: 14px;
+}
+#sidebar .wrapper {
+	padding: 10px;
+}
+#sidebar span.deco {
+	position: absolute;
+	top: -10px;
+	right: 4px;
+	display: block;
+	width: 1px;
+	height: 10px;
+	background: url(../../i/fountain/dotted-black-v.png) repeat-y 0 0;
+}
+.module {
+	background: #fff;
+	border: solid 1px #ccc;
+	border-width: 0 1px 1px 0;
+	margin: 25px 4px 25px 0;
+	padding: 10px;
+	font-size: 11px;
+}
+.module p {
+	line-height: 1.6363;
+}
+.module li {
+	padding-left: 10px;
+	background: url(../../i/fountain/li.png) no-repeat 0 6px;
+	margin: 6px 0;
+}
+
+																				/* -- Sidebar Nav -- */
+.sidebar-nav ul {
+	margin: 0.5em 0;
+}
+.sidebar-nav li {
+	margin-bottom: 0.5em;
+	padding-left: 15px;
+	background: url(../../i/fountain/li-sidebar.gif) no-repeat 2px 0.4em;
+}
+																				/* -- Search -- */
+.searchBox label, #searchBox label {
+	display: none;
+}
+#search {
+	padding: 0;
+	margin: 0 10px 0 0;
+	float: left;
+	border: solid 1px #ccc;
+	height: 20px;
+}
+.searchBox .button, #searchBox .button {
+	padding: 5px 19px;
+}
+																				/* -- About this Post -- */
+.about-post .context, .about-post .reply {
+	padding-top: 3px;
+	background: url(../../i/fountain/dotted-black-h.png) repeat-x left top;
+	overflow: hidden;
+}
+.about-post .text, .about-post .title, .about-post .date {
+	display: block;
+}
+.context .title {
+	text-decoration: underline;
+}
+.context a:link, .context a:visited {
+	text-decoration: none;
+	width: 117px;
+	line-height: 1.6;
+	outline: none;
+}
+.context .previous a:link, .context .previous a:visited {
+	float: left;
+	background: url(../../i/fountain/prev-link.png) no-repeat 0 50%;
+	padding-left: 16px;
+}
+.context .previous a:hover {
+	background-image: url(../../i/fountain/prev-hover.png);
+}
+.context .next a:link, .context .next a:visited {
+	float: right;
+	background: url(../../i/fountain/next-link.png) no-repeat 100% 50%;
+	text-align: right;
+	padding-right: 16px;
+}
+.context .next a:hover {
+	background-image: url(../../i/fountain/next-hover.png);
+}
+																				/* -- About Panel -- */
+.about-site, .about-post {
+	background-color: transparent;
+	margin: 25px 4px 25px 0;
+	padding: 0 10px;
+}
+.about-site p, .about-post p {
+	font-size: 11px;
+	line-height: 2;
+}
+																				/* -- Zen Panel -- */
+.zen-book {
+	position: relative;
+}
+.zen-book h2 {
+	margin-bottom: 6px;
+}
+.zen-book p {
+	margin: 0;
+}
+.zen-book img {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.zen-book .get-it {
+	margin-top: 10px;
+}
+																				/* -- Icon Teaser -- */
+.icon-teaser {
+	padding: 0 10px;
+	font-size: 11px;
+	line-height: 1.637;
+	margin-bottom: 25px;
+	overflow: hidden;
+}
+.icon-teaser img {
+	float: left;
+	margin: 6px 12px 6px 0;
+}
+.icon-teaser p {
+	margin: 6px 0 0 0;
+}
+
+																				/* -- The Dailies -- */
+.the-dailies {
+	padding: 0 10px;
+	font-size: 11px;
+	line-height: 1.637;
+}
+.the-dailies dl {
+	margin-bottom: 0;
+}
+.the-dailies dt {
+	padding: 8px 2px 0 2px;
+	background: none;
+	margin: 0;
+}
+.the-dailies dd {
+	padding: 0 2px 8px 2px;
+}
+.the-dailies dt.solo {
+	padding-bottom: 8px;
+}
+.the-dailies dt, .the-dailies .buttons {
+	background-image: url(../../i/fountain/dotted-black-h.png);
+	background-position: top left;
+	background-repeat: repeat-x;
+}
+.the-dailies .buttons {
+	position: relative;
+	height: 38px;
+}
+.the-dailies .buttons a:link, .the-dailies .buttons a:visited {
+	display: block;
+	height: 22px;
+	position: absolute;
+	top: 8px;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+#button-rss {
+	width: 59px;
+	right: 0;
+	background-image: url(../../i/fountain/b-rss.png);
+	background-position: 19px 6px;
+	background-repeat: no-repeat;
+}
+#button-archives {
+	width: 98px;
+	right: 61px;
+	background-image: url(../../i/fountain/b-archives.png);
+	background-position: 19px 6px;
+	background-repeat: no-repeat;
+}
+																				/* -- Event: Solo -- */
+.events {
+	text-align: center;
+	margin: 25px 4px 25px 0;
+}
+																				/* --------------------------------------------------------------- */
+																				/* -- Footer -- */
+#footer {
+	clear: left;
+	padding-top: 10px;
+	position: relative;
+	width: 100%;
+	border: solid 1px #fff;
+}
+#footer .wrapper1 {
+	background: url(../../i/fountain/dotted-white-v.png) repeat-y 0 0;
+	border-left: solid 3px #ccc;
+}
+#footer .wrapper2 {
+	background: url(../../i/fountain/dotted-white-v.png) repeat-y right top;
+	border-right: solid 5px #ccc;
+}
+#footer .wrapper3 {
+	background: url(../../i/fountain/dotted-white-h.png) repeat-x left bottom;
+	border-bottom: solid 4px #ccc;
+	overflow: hidden;
+	width: 100%;
+}
+#footer .deco1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	background: url(../../i/fountain/dotted-black-v.png) repeat-y 3px 0;
+}
+#footer .deco2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 6px;
+	height: 10px;
+	background: url(../../i/fountain/dotted-black-v.png) repeat-y 0 0;
+}
+#footer p {
+	float: left;
+	margin: 0;
+	padding: 15px 15px 15px 25px;
+	font-family: palatino, georgia, serif;
+}
+#footer a:link, #footer a:visited {
+	color: #fff;
+}
+#footer ul {
+	float: right;
+	padding: 15px 15px 15px 25px;
+}
+#footer li {
+	font-size: 11px;
+	text-transform: uppercase;
+	display: inline;
+	margin: 0 3px 0 0;
+	padding: 0 6px 0 12px;
+	border-left: solid 1px #ccc;
+}
+#footer li a:link, #footer li a:visited {
+	text-decoration: none;
+}
+#footer li a:hover {
+	text-decoration: underline;
+}
+#footer li.first {
+	border-left: 0;
+}
+
+
+																				/* -- Accessibility Tweaks -- */
+#accessibility {
+	position: absolute;
+	top: -9999px;
+	font-size: 1px;
+}
+.hide {
+	display: none;
+}

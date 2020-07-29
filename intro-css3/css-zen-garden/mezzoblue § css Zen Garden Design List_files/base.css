@@ -1,0 +1,377 @@
+/*
+
+	-- -- -- -- -- -- --
+	mezzoblue v6 base layout CSS file
+	'Fountain' style
+	last edit: 20 oct 07
+	-- -- -- -- -- -- --
+
+	File Contents:
+	Zen Garden support styles
+	
+*/
+
+																					/* -- General tweaks -- */
+hr {
+	border: solid 1px #ccc;
+	border-width: 1px 0 0 0;
+	height: 1px;
+	margin: 1.5em 0;
+}
+#main-content ul li {
+	margin: 1em 0 1em 0;
+	padding: 0;
+	list-style: none;
+}
+.z-title {
+	color: #999;
+	font: italic 1.4em palatino, georgia, serif;
+	margin: 25px 0 -25px 0;
+	display: block;
+}
+
+
+																					/* -- Official Design Listing -- */
+#main-content .official ul li {
+	margin: 0;
+	padding: 0 0 3em 0;
+	background: none;
+}
+.official .row {
+	position: relative;
+	width: 100%;
+}
+.official .row li {
+	width: 170px;
+	padding-bottom: 3em;
+	display: block;
+}
+.official .row li.second {
+	position: absolute;
+	left: 192px;
+	top: 0;
+}
+.official .row li.third {
+	position: absolute;
+	left: 384px;
+	top: 0;
+}
+.official .preview {
+	display: block;
+	width: 170px;
+	height: 114px;
+	margin-bottom: 5px;
+	position: relative;
+	float: left;
+}
+.official .preview img {
+	display: block;
+	padding: 4px;
+	background: #fff;
+	border: solid 1px #ccc;
+}
+.official .preview a:hover img {
+	border-color: #999;
+}
+.official .numero {
+	font-size: 0.85em;
+	display: block;
+	bottom: 1px;
+	right: 1px;
+	position: absolute;
+	line-height: 1;
+	background: url(/i/zen/bg-angle.gif) no-repeat -20px 0;
+	padding: 3px 7px 3px 20px;
+}
+.official h3 {
+	font: 1.2em/1em "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+	margin: 0 0 0.3em 0;
+}
+.official ul {
+	padding: 0;
+	margin: 0;
+}
+.official li p {
+    margin: 0;
+    line-height: 1.2;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: #999;
+    padding-left: 0;
+    position: relative;
+}
+.official li a:link, .official li a:visited {
+	text-decoration: none;
+}
+.official li a:hover {
+	text-decoration: underline;
+}
+
+.official li p .country {
+	text-transform: none;
+}
+.non-official p .country,
+.non-official p .published {
+	color: #999999;
+	font-size: 0.9em;
+	line-height: 1.2;
+	margin: 0pt;
+	padding-left: 0pt;
+}
+
+																					/* -- Pager -- */
+.pager {
+	border: solid 1px #ddd;
+	border-width: 1px 0;
+	background: #f6f6f6;
+	overflow: auto;
+	width: 100%;
+	margin: 1.5em 0;
+}
+#main-content .pager ul {
+	margin: 0;
+}
+#main-content .pager ul li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+#main-content .pager ul li a:link,
+#main-content .pager ul li a:visited,
+#main-content .pager ul li.unlinked {
+	display: block;
+	float: left;
+	padding: 5px 7px;
+	margin: 2px 0 1px 5px;
+	border: solid 1px #ddd;
+	background: #f6f6f6;
+	line-height: 1.2;
+	text-decoration: none;
+}
+#main-content .pager ul li a:hover {
+	border-color: #ccc;
+	background: #fff;
+	text-decoration: none;
+}
+#main-content .pager ul li.current a:link,
+#main-content .pager ul li.current a:visited {
+	color: #000;
+	border-color: #999;
+	background: #fff;
+}
+#main-content .pager ul li.arrow a:link,
+#main-content .pager ul li.arrow a:visited,
+#main-content .pager ul li.unlinked {
+	border-color: #f6f6f6;
+	background: #f6f6f6;
+}
+																					/* -- Translations List -- */
+#main-content ul li {
+	padding-left: 25px;
+}
+																					/* -- Submit form clarification -- */
+.form-clarification h3 {
+	border-top: dotted 1px #ccc;
+	padding-top: 1.5em;
+	margin: 1em 0 0 0;
+}
+.form-clarification h4 {
+	margin-top: 0;
+}
+
+																					/* -- Submit Page -- */
+#sendmail {
+	width: 400px;
+}
+.z-submit .example {
+	padding-left: 2em;
+}
+.z-submit .switchForms {
+	border: solid 1px #f50;
+	padding: 10px;
+	background: #fd9;
+}
+.z-submit .switchForms strong {
+	display: block;
+	color: #f50;
+}
+.z-submit .errorMessage {
+	border: solid 1px #E62C00;
+	padding: 10px 10px 10px 50px;
+	background: #F7BFB2 url(/i/zen/submit-error.gif) no-repeat 8px 10px;
+}
+.z-submit .errorMessage strong {
+	display: block;
+	color: #E62C00;
+}
+.z-submit .error {
+	border: solid 1px #E62C00;
+	padding: 0 10px 10px 10px;
+	background: #F7BFB2;
+	margin: 20px 0;
+}
+.z-submit .error label {
+	font-weight: bold;
+}
+.z-submit .error strong {
+	color: #E62C00;
+}
+.z-submit #sendmail {
+	margin: 2em 0;
+}
+.z-submit .pair {
+	position: relative;
+	padding-bottom: 10px;
+}
+.z-submit #main-content .pair a:link, .z-submit #main-content .pair a:visited {
+	border: none;
+}
+.z-submit .pair a:hover {
+	background: none;
+}
+.z-submit .pair img {
+	position: absolute;
+	right: 18px;
+	top: 3px;
+}
+.z-submit .pair img.required {
+	right: 3px;
+}
+.z-submit .pair img.mod1 {
+	top: 1.4em;
+}
+.z-submit .pair img.mod2 {
+	top: 1.4em;
+}
+.z-submit input#name, .z-submit input#email, .z-submit input#url, .z-submit input#nation {
+	position: absolute;
+	right: 38px;
+	top: 0;
+	width: 170px;
+}
+.z-submit input#css, .z-submit input#zip, .z-submit input#title {
+	width: 355px;
+}
+.z-submit .error input#css, .z-submit .error input#zip, .z-submit .error input#title {
+	width: 299px;
+}
+
+																					/* -- Sidebar -- */
+
+
+.zen-rss, .zen-nav {
+	margin: 1.5em 0;
+}
+.selected-alldesigns li.zg-all, .selected-faq li.zg-faq, .selected-resources li.zg-resources,
+.selected-languages li.zg-languages, .selected-submit li.zg-submit {
+	background-image: url(../../../i/fountain/li-sidebar-selected.gif);
+}
+.zen-book h3 {
+	font: bold 11px "Lucida Grande", "Lucida Sans Unicode", arial, sans-serif;
+	margin: 1.6363em 0 0.8182em 0;
+}
+a.rss-feed:link, a.rss-feed:visited {
+	display: block;
+	padding-left: 23px;
+	line-height: 1.5;
+	background: url(../../../i/fountain/ico-rssfeed.png) no-repeat 0 50%;
+}
+
+
+																					/* -- Footer -- */
+.zen-footer {
+	margin: 12px 0 0 0;
+	padding: 12px 0 0 0;
+	border-top: dotted 1px #ccc;
+}
+
+
+/* -- Design Lists -- 
+.z-alldesigns #main-content .date {clear:both; display:block; padding-top:20px;}
+.z-alldesigns #main-content ul {list-style:none; padding:0; margin:0;}
+.z-alldesigns .lead-in {margin-bottom: 2em;}
+h2#officialdesigns {margin: 0 0 0.5em 0; line-height:1;}
+
+#main-column {float:left; width:360px; display:inline;}
+#main-column a:link, #main-column a:visited, #secondary-column a:link, #secondary-column a:visited {border:none;}
+
+
+
+body.zengarden #main-content li.official {background-image:url(/i/ice/li3.gif); text-transform: uppercase;}
+body.zengarden #main-content li.legacy {background-image:url(/i/ice/li3.gif); font-weight: bold;}
+
+a.view-all:link, a.view-all:visited {display: block; padding: 0 14px 0 0; background-image:url(/i/zen/arrow-blue.gif); background-repeat:no-repeat; background-position:186px 5px; text-align: right;} 
+	a.view-all:hover {background-image:url(/i/zen/arrow-blue-hover.gif);} 
+#main-column a.view-all:link, #main-column a.view-all:visited {padding:0 0 0 14px; background-image:url(/i/zen/arrow-blue.gif); background-repeat:no-repeat; background-position:2px 5px; text-align:left; width:170px;}
+	#main-column a.view-all:hover {background-image:url(/i/zen/arrow-blue-hover.gif);} 
+
+
+/* -- Design Lists Sidebar -- 
+#secondary-column {margin-left:380px; width:198px; padding-top:0em;}
+#secondary-column h2 {font-size: 1.2em; margin: 2em 0 0 0; line-height: 1;}
+#secondary-column p, #secondary-column table, #secondary-column dl {margin: 0.5em 0 1em 0;}
+h2#designsbycategory {margin:0;}
+#secondary-column dd {font-size: 0.9em; line-height: 1.2; padding: 0 1em;}
+#secondary-column dt {background: none; padding: 0;}
+#secondary-column table {margin:1em 0; padding:0; width:198px;}
+#secondary-column td {line-height:1.1; padding-right:10px;}
+#secondary-column td.new {text-align:center; border-left:solid 1px #D7DCE0; padding: 7px 3px; width: 30px;}
+#secondary-column td.total {text-align:center; border-left:solid 1px #D7DCE0; padding: 7px 3px; width: 30px;}
+#secondary-column th {text-indent:-9999px;}
+#secondary-column th.category {background:#C7CBCE url(/i/zen/th-category.gif) no-repeat left center;}
+#secondary-column th.new {background:#C7CBCE url(/i/zen/th-new.gif) no-repeat center center;}
+#secondary-column th.total {background:#C7CBCE url(/i/zen/th-total.gif) no-repeat center center;}
+#secondary-column .alt td {background:#EDEEEF;}
+
+/* -- Ads -- 
+#secondary-column .announcement {text-align:center; margin:4.2em 0 2em 0;}
+#secondary-column .announcement p {text-transform:uppercase; color:#999; font-size: 0.9em; margin:0 0 1.5em 0;}
+#secondary-column .announcement img {display:block; margin:0 auto;}
+* html #secondary-column .announcement {margin-top:2.2em;}
+
+
+body.zengarden #main-content ul.feeds li {background:url(/i/zen/button-rss.gif) no-repeat 2px 2px; margin:0; padding:0;}
+ul.feeds li a:link, ul.feeds li a:visited {padding:2px 2px 2px 29px;}
+ul.feeds li a:hover {background-image:url(/i/zen/button-rss-hover.gif); background-repeat:no-repeat; background-position:2px 2px;}
+
+
+/* -- pager -- 
+.pager {margin-bottom:1em; font-size:0.9em; padding:8px 10px; background:#eee; border:solid 1px #ccc; position: relative;}
+.pager ul {overflow:auto;}
+.pager p {margin:0.2em 0;}
+#main-content div.pager ul li {display:inline; clear:none; background: none; padding: 0; margin: 0;}
+#main-content .pager li a:link, #main-content .pager li a:visited {margin:0 0.2em; padding:0 2px; text-align:center; display:block; float:left; border:none;}
+#main-content .pager li a.current:link, #main-content .pager li a.current:visited {color:#fff; background:#0088FF url(/i/zen/bubble.gif); width:24px; height:20px; padding:0;}
+#main-content .pager li a.current-lg:link, #main-content .pager li a.current-lg:visited {color:#fff; background:#0088FF url(/i/zen/bubble-large.gif); width:73px; height:20px; padding:0;}
+.prevnext {position:absolute; top:-1px; right:-1px; width:109px; height:16px;}
+#main-content .prevnext a:link, #main-content .prevnext a:visited {display:block; position:absolute; top:0; left:0; text-indent:-9999px; border:none; width:70px; height:16px;}
+#main-content .prevnext a.next:link, #main-content .prevnext a.next:visited {width: 39px; left: 70px;}
+#main-content .prevnext a.prev:hover {background:transparent url(/i/zen/prev-next.gif) 0 -16px;}
+#main-content .prevnext a.next:hover {background:transparent url(/i/zen/prev-next.gif) -70px -16px;}
+.listbegins {background: url(/i/zen/prev-next.gif) 0 -32px;}
+.midlist {background: url(/i/zen/prev-next.gif);}
+.listends {background: url(/i/zen/prev-next.gif) 0 -48px;}
+
+/* -- Submit Page -- 
+.z-submit .example {padding-left:2em;}
+.z-submit .switchForms {border:solid 1px #f50; padding:10px; background:#fd9;}
+.z-submit .switchForms strong {display:block; color:#f50;}
+.z-submit .errorMessage {border:solid 1px #E62C00; padding:10px 10px 10px 50px; background:#F7BFB2 url(/i/zen/submit-error.gif) no-repeat 8px 10px;}
+.z-submit .errorMessage strong {display:block; color:#E62C00;}
+.z-submit .error {border:solid 1px #E62C00; padding:0 10px 10px 10px; background:#F7BFB2; margin:20px 0;}
+.z-submit .error label {font-weight:bold;}
+.z-submit .error strong {color:#E62C00;}
+.z-submit #sendmail {margin:2em 0;}
+.z-submit .pair {position:relative; margin-bottom:5px;}
+.z-submit #main-content .pair a:link, .z-submit #main-content .pair a:visited {border:none;}
+.z-submit .pair a:hover {background:none;}
+.z-submit .pair img {position:absolute; right:18px; top:5px;}
+.z-submit .pair img.required {right:3px;}
+.z-submit .pair img.mod1 {top:2em;}
+.z-submit .pair img.mod2 {top:2em;}
+.z-submit input#name, .z-submit input#email, .z-submit input#url, .z-submit input#nation {position:absolute; right:38px; top:0; width:130px;}
+.z-submit input#css, .z-submit input#zip, .z-submit input#title {width:312px;}
+.z-submit .error input#css, .z-submit .error input#zip, .z-submit .error input#title {width:299px;}
+
+
+*/

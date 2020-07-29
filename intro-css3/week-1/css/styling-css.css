@@ -1,0 +1,28 @@
+h1 {
+	font-size: 150px;
+	color: #ff3300;
+}
+
+header {
+	background: #0000ff;
+	text-align: center;
+}
+
+li {
+	font-variant: small-caps;
+	font-size: 150%;
+	font-family: fantasy;
+}
+
+details {
+	font-style: italic;
+}
+
+summary {
+	font-style: normal;
+}
+
+footer {
+	background-color: #ff00ff;
+}
+

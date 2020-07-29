@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device=width, initial-scale=1">
+		<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
+		
+		<title>Responsive Navi</title>
+	</head>
+	<body>
+	
+	<!--navbars and their contents are fluid by default. Use optional containers to limit their horizontal width-->
+	<!--Use spacing and flex utility classes for controlling spacing and alignment within navbars-->
+	<!--Navbars are hidden by default when printing. Force them to be printed by adding .d-print to the .narbar-->
+	<!--The animation effect of this component is dependent on the prefers-reduced-motion media query. See the reduced motion section of our accessibility documentation.-->
+	
+	<style>
+.carousel-3d-body{overflow-x:hidden}.carousel-3d{position:relative;width:60%;height:400px;margin:80px auto;-webkit-perspective:1000px;perspective:1000px}.carousel-3d .carousel-3d-inner{position:absolute;width:100%;height:100%;-webkit-transform:translateZ(-288px);transform:translateZ(-288px);-webkit-transform-style:preserve-3d;transform-style:preserve-3d;-webkit-transition:-webkit-transform 1s;-o-transition:transform 1s;transition:transform 1s;transition:transform 1s,-webkit-transform 1s}.carousel-3d .carousel-3d-item{position:absolute;width:190px;height:120px;-webkit-transition:opacity 1s,-webkit-transform 1s;-o-transition:transform 1s,opacity 1s;transition:transform 1s,opacity 1s;transition:transform 1s,opacity 1s,-webkit-transform 1s}.carousel-3d .carousel-3d-item img{width:100%!important;height:100%!important;-o-object-fit:cover!important;object-fit:cover!important}.carousel-3d .carousel-3d-controls{position:absolute;left:0;top:-80px;width:100%;height:100%;text-align:center}.carousel-3d .carousel-3d-controls a{width:30px;height:30px;text-align:center;font-size:26px}@media (max-width:768px){.carousel-3d{-webkit-perspective:200px;perspective:200px}.carousel-3d .carousel-3d-item{position:absolute;width:95px;height:60px;-webkit-transition:opacity 1s,-webkit-transform 1s;-o-transition:transform 1s,opacity 1s;transition:transform 1s,opacity 1s;transition:transform 1s,opacity 1s,-webkit-transform 1s}.carousel-3d-vertical{-webkit-perspective:2000px;perspective:2000px}.carousel-3d-vertical .carousel-3d-controls{position:absolute;left:0;top:0;width:50%;height:50%;text-align:center;-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}}.carousel-3d-vertical .carousel-3d-controls{position:absolute;left:0;top:0;width:100%;height:100%;text-align:center;-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}
+</style>
+	
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark d-print">
+		<a class="navbar-brand" href="#">Website</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+		 aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Page 1</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Page 2</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Page 3</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Dropdown
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	
+	<div class="container">
+  <div class="carousel-3d carousel-3d-basic">
+    <div class="carousel-3d-inner">
+      <div class="carousel-3d-item"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20(45).jpg" alt="Slide"></div>
+      <div class="carousel-3d-item"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20(46).jpg" alt="Slide"></div>
+      <div class="carousel-3d-item"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20(47).jpg" alt="Slide"></div>
+      <div class="carousel-3d-item"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20(48).jpg" alt="Slide"></div>
+      <div class="carousel-3d-item"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20(49).jpg" alt="Slide"></div>
+      <div class="carousel-3d-item"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20(50).jpg" alt="Slide"></div>
+      <div class="carousel-3d-item"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20(51).jpg" alt="Slide"></div>
+      <div class="carousel-3d-item"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20(52).jpg" alt="Slide"></div>
+      <div class="carousel-3d-item"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20(53).jpg" alt="Slide"></div>
+    </div>
+  </div>
+</div>
+
+
+
+	</body>
+</html>

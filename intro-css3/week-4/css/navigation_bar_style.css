@@ -1,0 +1,55 @@
+body, nav, a, header,ul,li {
+  margin: 0;
+  padding: 0;
+}
+nav, ul,li {
+  background-color: #37474f;
+}
+
+nav li:hover {
+  background-color: #009688;
+  transition: .10s background-color; 
+}
+
+nav ul>li  {
+  display: inline-block;
+  width: 24%;
+  height: 60px;
+  line-height: 45px;
+    border-right: 3px solid yellow;
+}
+
+nav ul>li:last-child{
+  border: none;
+}
+nav li ul li {
+  display: block;
+  border: none;
+ 
+}
+
+nav li ul{
+  position: absolute;
+  display: none;
+  margin-top: 12px;
+}
+
+nav li:hover ul{
+  
+  display: block;
+}
+nav li ul {
+  width: inherit;
+
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+li > a {
+  margin-left: 70px;
+  font-size: 20px;
+  
+}

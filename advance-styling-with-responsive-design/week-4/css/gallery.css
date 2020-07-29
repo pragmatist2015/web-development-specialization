@@ -1,0 +1,236 @@
+body{
+  font-size: 1.5em;
+}
+
+.navbar-container, nav{
+  position: absolute;
+  top:20px;
+
+}
+
+nav{
+  z-index: 2;
+}
+
+.navbar-dark{
+  color: #ffffff;
+}
+
+
+
+header {
+  height:250px;
+	background: #1d1f20;
+	padding: 50px;
+  overflow: hidden;
+  color: #FFF;
+  z-index: -1;
+
+  * {
+    box-sizing:border-box;
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+  }
+
+}
+
+.text-wrap{
+
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+
+svg {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  font: bold 100px sans-serif;
+  text-transform: uppercase;
+}
+
+.img-layer {
+  fill: url(#p-img);
+}
+
+.gradient-layer {
+  fill: url(#gr-overlay);
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  opacity: 0;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: ;
+}
+
+.tooltip:hover .tooltiptext{
+  visibility: visible;
+}
+
+
+.tipDiv{
+    width:100%;
+    position:absolute;
+    top:0;
+    left: 0;
+
+    background:;
+    height: 250px;
+    z-index: 1;
+    visibility: ;
+
+}
+
+header .tip{
+  position:absolute;
+  left: 10%;
+  top: 60%;
+  background: #000000;
+  padding: 0 20px;
+  visibility: hidden;
+  border-radius: 5px;
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.tipDiv:hover .tip {
+    opacity: 1;
+    visibility: visible;
+}
+
+#moreDetailsWindow{
+  width: 60%;
+  height: 100%;
+  position:fixed;
+  top:0;
+  right:0;
+  background: rgba(20,20,20, 0.8);
+  z-index: 4;
+  color: #ffffff;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#moreDetailsWindow button{
+  margin-left:;
+  color: #ffffff;
+}
+
+
+
+#galleryContainer img{
+  height:200px;
+  width:100%;
+}
+
+.imgTagsSpan{
+  background: rgba(193,184,184,1);
+  color: #000000;
+  padding: 1px 5px;
+  margin: 2px 1px;
+  border-radius: 5px;
+  border:;
+  display: inline-block;
+}
+
+#imgEnlarged{
+    width: 80%;
+    height: 30%;
+
+}
+
+
+@media screen and (min-width: 768px){
+  body{
+    font-size: 1em;
+  }
+
+  header .tip{
+    position:absolute;
+    left: 39%;
+    top: 60%;
+    background: #000000;
+    padding: 0 20px;
+    visibility: hidden;
+    border-radius: 5px;
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity 3s;
+  }
+
+  header{
+    height:400px;
+  }
+
+  .tipDiv{
+    height: 500px;
+  }
+
+  #galleryContainer img{
+    height:200px;
+    width:100%;
+  }
+
+  #moreDetailsWindow button{
+    width: 70px;
+    height: 70px;
+  }
+  #imgEnlarged{
+      width: 70%;
+      height: 20%;
+
+  }
+}
+
+@media screen and (min-width: 996px){
+
+  header .tip{
+    position:absolute;
+    left: 39%;
+    top: 60%;
+    background: #000000;
+    padding: 0 20px;
+    visibility: hidden;
+    border-radius: 5px;
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity 3s;
+  }
+
+  header{
+    height:500px;
+  }
+
+  .tipDiv{
+    height: 500px;
+  }
+
+  #galleryContainer img{
+    height:150px;
+    width:100%;
+  }
+
+  #imgEnlarged{
+      width: 70%;
+      height: 50%;
+
+  }
+}

@@ -1,0 +1,21 @@
+button {
+  width: 30%;
+  background-color: rgb(15,142,200);
+}
+button:focus{
+  border: 3px rgb(15,100,60) solid;
+}
+
+.show {
+    display: block;
+}
+
+.hide{
+  display: none;
+}
+
+#demo1{
+  background: rgb(40,40,40);
+  font-size: 2em;
+  color: #ffffff;
+}

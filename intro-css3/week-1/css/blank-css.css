@@ -1,0 +1,14 @@
+span{
+	background-color: green;
+	width: 100px;
+	display: inline-block;
+}
+
+div {
+	background-color: blue;
+	width: 45%;
+}
+
+p {
+	background-color: purple;
+}

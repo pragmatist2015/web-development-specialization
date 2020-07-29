@@ -1,0 +1,103 @@
+header {
+   
+    
+}
+
+footer {
+  color: #ffffff;
+  padding: 10px;
+  display: block;
+  clear: both;
+  background-color: #263238;
+  height: ;
+  position: ;
+  margin: 0px;
+  
+}
+
+footer a {
+  color: pink;
+}
+h1 {
+  font-variant: small-caps;
+  
+  margin: 0px;
+  padding-top: 5%;
+  text-align: center;
+  /*
+  background-image: url('https://drawingfineart.net/wp-content/uploads/2018/08/Drawing-blossom-tree-drawing-outline-blossoms-by-zetsukix-rhdrawingzorocom-peach-cartoon-handpainted-rhkisspngcom-cherry-Realistic-Cherry-Blossom-Tree.jpg');
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+  */
+  background: rgb(251,114,209);
+  color: #ffffff;
+  background: linear-gradient(180deg, rgba(251,114,209,1) 15%, rgba(255,255,255,1) 100%);
+  width: 100%;
+  height: 250px;
+ 
+}
+
+div.image{
+  background-image: url('https://i.pinimg.com/564x/f6/2a/91/f62a91ccb7298b324e22fbfb0efc9506.jpg');
+  background-repeat: no-repeat;
+  background-position: ;
+  width: 600px;
+  height: 300px;
+  margin-top: 20%;
+  opacity: ;
+}
+
+nav {
+  
+  
+}
+
+div.sections {
+  position:;
+  top: 15%;
+  margin-bottom: ;
+}
+
+section.favs{
+ overflow: scroll;
+ height: 250px;
+}
+div.shadow {
+  position: ;
+  position-x: ;
+  margin: auto;
+  margin-top: 20%;
+  background-color: #ffffff;
+  width: 90%;
+  height: 250px;
+  box-shadow: 10px 10px 5px grey;
+}
+
+body {
+  
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background-color: #FEFCF7;
+  
+}
+
+
+
+section {
+  margin-top: 20%;
+  display: inline-block;
+  width: 25%;
+  margin-left: 5%;
+  float: left;
+  position: ;
+  left: 30%;
+}
+
+main {
+   background-color:  red;
+}
+
+h2 {
+  font-variant: small-caps;  
+}

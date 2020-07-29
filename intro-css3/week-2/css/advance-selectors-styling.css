@@ -1,0 +1,100 @@
+
+body {
+  font: 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+}
+h1 {
+  font-size: 200%;
+  
+  text-align: center;
+}
+input {
+  display: none;
+}
+
+.background {
+    background-color: rgba(84, 109, 120, 0.7);
+  width: 50%;
+  height: 620px;
+  border-radius: 5px;
+  margin: auto;
+  padding-bottom: ;
+}
+
+
+section {
+  margin: 15% 0 0 30%;
+  
+}
+
+h2 {
+  
+  text-align: ;
+  font-variant: small-caps;
+}
+
+
+.whole {
+  width: 50%;
+  padding-bottom: 10%;
+
+}
+label,
+ul {
+  border: 1px solid #cecfd5;
+  border-radius: 6px;
+}
+
+label, nav ul{
+  margin-left: 80%;
+  
+}
+
+nav ul {
+  margin-top: ;
+  
+}
+label {
+  color: #0087cc;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  padding: 5px 9px;
+  transition: all .15s ease;
+}
+label:hover {
+  color: #ff7b29;
+}
+input:checked + label {
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: #9799a7;
+ 
+}
+nav {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .15s ease;
+  
+}
+input:checked ~ nav {
+  max-height: 500px;
+}
+ul {
+  list-style: none;
+  margin: 8px 0 0 0;
+  width: 100px;
+}
+li {
+  border-bottom: 1px solid #cecfd5;
+}
+li:last-child {
+  border-bottom: 0;
+}
+a {
+  color: #0087cc;
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff7b29;
+}

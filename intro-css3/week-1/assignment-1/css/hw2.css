@@ -1,0 +1,173 @@
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  background: ;
+}
+
+main{
+  margin: 0;
+  padding:;
+  height: 100%;
+}
+
+a img {
+  width:90%;
+  display: block;
+  margin: auto;
+  margin-top: 10%;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, #b861c6 0%,#ffc7c7 100%);
+  border-image-slice: 1;
+  box-shadow: 1px 5px 5px 1px rgba(0,0,0,.2);
+
+}
+
+header {
+  background: rgb(234,140,24) url("../imgs/flywheel.jpg") no-repeat;
+  background-size: 100%;
+  height:25%;
+  border: ;
+  box-shadow: 0px 0px 10px 0px;
+}
+
+h1{
+  text-align: center;
+  margin: 0;
+  font-size: 3em;
+  color: #ffffff;
+  background: -webkit-linear-gradient(to right,pink, pink,purple,purple, orange , yellow, green,red, cyan, blue, violet);
+  background: -o-linear-gradient(to right,pink, pink,purple,purple, orange , yellow, green,red, cyan, blue, violet);
+  background: -moz-linear-gradient(to right,pink, pink,purple,purple, orange , yellow, green,red, cyan, blue, violet);
+  background: linear-gradient(to right,pink, pink,purple,purple, orange , yellow, green,red, cyan, blue, violet);
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip:text;
+  -moz-text-fill-color: transparent;
+}
+
+h2{
+  font-size: 2em;
+}
+
+nav {
+  margin-top: 2%;
+}
+
+nav a{
+  text-decoration: none;
+  padding: 1% 5%;
+  margin: 0 4%;
+  font-size: 1.3em;
+  background: rgba(255,255,255,.2);
+  color: #000000;
+  border-radius: 3px;
+
+}
+
+a:hover {
+  background: rgba(255,255,255,1);
+}
+
+.active{
+
+  background: rgb(42,115,204);
+}
+.left{
+ display: inline-block;
+ width: 25%;
+ height:100%;
+ background: rgb(63,94,251);
+ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+
+.right{
+  display: inline-block;
+  width: 50%;
+  float:right;
+  padding: 5%;
+  margin-right: 8%;
+  margin-top:5%;
+  background:rgba(255,255,255,.6);
+
+  border-radius: 5px;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to right, #b861c6 0%,#ffc7c7 100%);
+  border-image-slice: 1;
+  box-shadow: 0px 0px 10px 1px rgba(100,30,100,.3);
+}
+.right p {
+  font-family: Verdana,'Bookman Old Style', Times;
+}
+
+table {
+  box-shadow: 1px 2px 5px 1px rgba(0,0,0,.4);
+  border-spacing: 0;
+  font-size: .85em;
+
+  border-radius: 5px 5px 0 0;
+}
+
+table tr:first-child {
+  background-image: linear-gradient(to right, #b861c6 0%,#ffc7c7 100%);
+  color: #ffffff;
+  text-align: left;
+  padding:10px;
+  font-family: Arial;
+  font-size: 1.3em;
+  line-height: 45px;
+}
+
+table tr>th{
+  padding-right: 10px;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(to right, rgba(63,94,251,1) 0%, rgba(252,70,107,1));
+  border-image-slice: 1;
+
+}
+
+table tr:first-child{
+
+}
+table th:first-child{
+  border-top-left-radius: 5px;
+  padding-left: 5px;
+}
+
+table th:last-child{
+  border-top-right-radius: 5px;
+}
+
+
+table tr:nth-child(even) {
+  background-color: rgb(50,200,255,0.2);
+}
+
+tr:hover:nth-child(n+2) {
+  background-color: rgb(50,150,255,0.5);
+  box-shadow: 3px 3px 3px 0px rgb(0,0,0,.4);
+}
+
+table tr{
+  opacity: .8;
+}
+  
+td {
+  padding: 5px;
+  font-family: Verdana,'Bookman Old Style', Times;
+
+}
+
+td:first-letter{
+  color: #ff7b29;
+}
+
+tr td~td, tr th:nth-child(n+2){
+  text-align: center;
+}

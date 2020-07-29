@@ -1,0 +1,92 @@
+html{
+	border: dashed;
+	
+}
+header {
+	padding-top: 0px;
+	margin-top: 0px;
+	height: 30%;
+	background-image: url("http://301stockinvesting.com/wp-content/uploads/2018/07/flex-banner-background-design-free-templates-adorable-transitionsfv-in-flex-banner-background-design-hd.jpg");
+	background-size: 100% 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+h1{
+	border: dashed;
+	color: #ffffff;
+  text-align: center;
+  padding-top: 100px;
+  margin: 0;
+  font-size: 500%;
+  font-family: Rockwell;
+  font-variant: small-caps;
+}
+
+h2 {
+	font-variant: small-caps;'
+}
+
+nav{
+  background-color: #b3e5fc;
+  margin-top: 100px;
+  text-align: right;
+  font-family: fantasy;
+  color: #ffffff;
+  word-spacing: 5px;
+}
+
+nav a{
+  color: #424242;
+  border-right: solid;
+  border-width: 0.5px;
+}
+
+nav a:hover{
+  color: #2962ff;
+  background-color: #ffffff;
+}
+
+section {
+ 
+  width: 50%;
+  text-align: center;
+  margin-left: 100px;
+  margin-top: 50px;
+  background-color:  #b3e5fc;
+}
+
+p {
+  /*     top  right bottom left */
+  padding: 20px 50px 20px 50px;
+  font-size: 120%;
+}
+
+img {
+	width: 80%;
+	height: 30%;
+  margin: 0px 30px 30px 30px;
+}
+
+img:hover {
+  transition: all .5s ease-in-out;
+ -ms-transform: scale(2.0); /* IE 9 */
+  -webkit-transform: scale(2.0); /* Safari 3-8 */
+  transform: scale(2.0) translate(-100px); 
+  
+}
+
+a{
+  color: #9C27B0;
+}
+
+aside{
+  float: right;
+  display: inline-block;
+  width: 40%;
+}

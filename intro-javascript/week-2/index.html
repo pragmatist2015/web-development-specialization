@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Site</title>
+    <link rel="stylesheet" href="css/changing-the-style.css">
+    <script src="js/events.js"></script>
+  </head>
+  <body onload="message('LOAD')" onresize="message('ONRESIZE')">
+    <h1>Hello World!</h1>
+
+    <hr>
+    <h2><a href="..\..\index.html">Home</a>\intro-javascript\week-2\index.html</h2>
+    <br>
+    <hr>
+    <p onclick="message('ONCLICK')">Click this paragraph to trigger an 'onclick' event</p>
+    <br>
+    <hr>
+    <p id="output">...</p>
+    <br>
+    <hr>
+    <button type="button" onclick="displayDate()">Display Date</button>
+    <p id="btnEvent"></p>
+    <br>
+    <hr>
+    <br>
+    <section>
+      <h1>Changing the Style: Event Driven</h1>
+      <p>JavaScript can change the style of an HTML element.</p>
+      <button type="button" onclick="show()">Open</button>
+      <button type="button" onclick="hide()">Close</button>
+      <p id="demo1">Extra details...You can open and close this paragraph using the buttons above</p>
+      <hr>
+    </section>
+  </body>
+</html>

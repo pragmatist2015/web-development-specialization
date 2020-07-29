@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<script src = "../js/external-js.js"></script>
+	</head>
+	<body onload = "eventCt('LOAD')" onresize = "eventCt('RESIZE')">
+		<section>
+			<h1>First External JS file</h1>
+		</section>
+		<section>
+			<h1>Responding to Events</h1>
+			<p onclick = "eventCt('CLICK')">It is possible to call functions based on Events</p>
+			<p>Click on the paragraph above to trigger an <em>onclick</em> event. Reload the page
+				to see an onload event</p>
+			<p id = "output">...</p>
+		</section>
+		<section>
+			<h1>Responding to basic Button Event</h1>
+			<p id = "demo">Click the button below to display the current date</p>
+			<button type = "button" onclick = "displayDate()">Display Date</button>
+			
+			<!-- writting the js directly into the event value-->
+			<p id = "demo2">Click the button below to display the current date</p>
+			<button type = "button" onclick = "document.getElementById('demo2').innerHTML = Date();">Display Date</button>
+		</section>
+	</body>
+</html>

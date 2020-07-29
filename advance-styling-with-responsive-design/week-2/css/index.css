@@ -1,0 +1,155 @@
+header {
+  border: ;
+}
+
+header h1{
+  font: 5vw "Gill Sans Ultra Bold","Snap ITC",Verdana ;
+  position: absolute;
+  top: 12%;
+  font-size: 6vw;
+  color: rgb(115,79,150);
+  margin-left: 2%;
+}
+
+header img {
+  width: 100%;
+  margin-bottom: 0px;
+
+}
+
+nav {
+  background-color: rgb(124,199,228);
+  margin-top: ;
+  padding-top: 0px;
+}
+
+nav a {
+  line-height: 45px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav a:hover{
+  background: rgba(255,255,255,.3);
+  color: rgb(32,130,165);
+}
+/*css for section1*/
+
+main {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+
+html, body {
+	background-color: #ffffff;
+}
+body {
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: .75em;
+	font-weight: normal;
+	color: #404040;
+  padding-bottom: 10%;
+}
+.section1 {
+    width:inherit;
+    margin: 0 auto;
+}
+
+.section1 h1 {
+	font-size: 400%;
+	margin: 0;
+	padding: 0;
+}
+
+.section1 h1, h2{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.column{
+  width: 80%;
+  margin-left: 10%;
+}
+
+section>p{
+  margin-left: 5%;
+}
+
+
+
+/* When designing mobile first you should not use max width
+   the default style should be built with mobile devices in mind*/
+/*
+@media screen and (max-width:500px){
+  .column{
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  section>p{
+    margin-left: 5%;
+  }
+
+  header h1{
+    position: absolute;
+    top: 5%;
+    font-size: 7vw;
+    color: rgb(115,79,150);
+  }
+}
+*/
+@media screen and (min-width: 766px ){
+  .column{
+    width: 30%;
+    display: inline-block;
+    margin-left: 2%;
+  }
+
+  header h1 {
+    color: #FBAED2 /*rgb(230, 230, 250)*/;
+    position: absolute;
+    font-size: 4vw;
+    top: 25%;
+    left: 20px;
+    text-align: left;
+  }
+
+  main, nav {
+    display: inline-block;
+
+  }
+
+  nav{
+    border:solid;
+    width: 10%;
+    height: 110vh;
+    float:left;
+  }
+
+  main{
+    width:85%;
+  }
+
+  nav a{
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1268px ){
+  .column{
+    width: 30%;
+    display: inline-block;
+    margin-left: 2%;
+  }
+
+  header h1 {
+    color: #FBAED2 /*rgb(230, 230, 250)*/;
+    position: absolute;
+    font-size: 5vw;
+    top: 35%;
+    left: 20px;
+    text-align: left;
+  }
+}

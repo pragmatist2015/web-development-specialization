@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<script src = "../js/week-4-final.js"></script>
+		<link rel = "stylesheet" href = "../css/week-4-final.css"/>
+	</head>
+	<body>
+		<header>
+			<h1>JavaScript Final</h1>
+		</header>
+		<section>
+			<h2>Week 4 Final</h1>
+			<p>Add the JavaScript code needed to enable auto-complete on this form.
+			Whenever the checkbox is checked, the code should automatically copy the values from
+			Shipping and Shipping Zip into the Billing Name and Billing Zip.. If the checkbox is
+			unchecked, the Billing Name and Billing Zip should go blank</p>
+			<br/>
+			
+			<form>
+				<fieldset>
+					<legend>Shipping Information</legend>
+					<label>Name: <input type = "name" name = "name_shipping" id = "name_shipping" oninput = "copyAndPaste(isChecked)" required></label><br/>
+					<label>Zip code: <input type = 'text' name = 'zip_code_shipping' id = 'zip_code_shipping' 
+					maxlength = '5' pattern = '[0-9]{5}' oninput = "copyAndPaste(isChecked)"required></label>
+				</fieldset>
+				
+				
+					
+					<label><input type = 'checkbox' name = 'same_billing' id = 'samebillingcheckbox'
+					onchange = "isChecked()">Is the Billing Information the Same?</label><br/>
+				<fieldset>
+					<legend>Billing Information</legend>
+					<label>Name: <input type = "name" name_billing = "name_billing" id = "name_billing" required></label><br/>
+					<label>Zip code: <input type = 'text' name = 'zip_code_billing' id = 'zip_code_billing' 
+					maxlength = '5' pattern = '[0-9]{5}' required></label>
+				</fieldset>
+				<label><input type = 'submit' value = 'Verify' id = 'submit'></label>
+			</form>
+		</section>
+	</body>
+</html>

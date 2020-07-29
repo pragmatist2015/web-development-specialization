@@ -1,0 +1,6 @@
+supporting unsupported elements across multiple browsers:
+
+=webkit-	( Android, Google, Safari )
+-moz-		( Modzilla )
+-ms-		( Microsoft Explore )
+-o-			( Opera )
